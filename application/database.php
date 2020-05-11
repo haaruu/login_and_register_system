@@ -16,8 +16,12 @@ class Database {
     }
 
     public function connect() { //connection to database
-       
+        try{
         $this->conn = new mysqli($this->servername, $this->username, $this->password, $this->database);
+    } catch(Exception $e){
+        echo "There are problems with: ".$e;
+    }
         return $this->conn;
     }
 }
+
