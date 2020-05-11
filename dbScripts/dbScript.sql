@@ -2,8 +2,7 @@ CREATE TABLE users(
     id int UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     name varchar(64) NOT NULL,
     password varchar(64) NOT NULL,
-    email varchar(64) NOT NULL,
-    PersonID int);
+    email varchar(64) NOT NULL);
 
 CREATE TABLE attributes(
     id int UNSIGNED AUTO_INCREMENT PRIMARY KEY,
