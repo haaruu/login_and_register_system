@@ -1,0 +1,211 @@
+body {
+    background: url("../images/background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+ .page-container {
+    position: relative;
+}
+.text-bottom {
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+.content-inactive {
+    position: absolute;
+    top: 120px;
+    left: 290px;    
+    width: 700px;
+    height: 320px;
+    background: rgba(10.6, 13.7, 27.8, 0.9);
+    z-index: -1;
+    color: rgb(241, 234, 234);
+    font-weight: 100;
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+.header {
+    letter-spacing: 0.7px;
+    font-size: 17px;
+    font-weight: lighter;
+}
+.sign-up-inactive,
+.login-inactive {
+    padding: 55px;
+    font-size: 12px;
+}
+.login-active,
+.sign-up-active {
+    padding: 45px;
+    font-size: 12px;
+    color: grey;
+}
+.content-active {
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    top: 103px;
+    left: 625px;
+}
+.sign-up-active {
+    display:none;
+    opacity: 0;
+    animation: anim 2s forwards;
+    margin: 20px;
+}
+.login-active {
+    opacity: 0;
+    animation: anim 2s forwards;
+    margin: 20px;
+  }
+@keyframes anim {
+    100% {
+      opacity: 1;
+    }
+}
+.content-active:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -10px;
+    width: 15px;
+    height: 338.5px;
+    background: #89deff;
+    transform: perspective(10em) rotateY(-55deg);
+    z-index: -1;
+}
+
+.btn {
+    cursor: pointer;  
+    border-radius: 25px;
+    padding: 12px 20px;  
+    width: 120px;
+    height: 40px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+.btn-inactve {
+    background-color: transparent;
+    border: 2px solid #49abfe;
+}
+.btn-inactve:hover {
+	background-color: #49abfe;
+}
+.btn-active {
+    background-color: #f89a35;
+    border: 2px solid #f89a35;
+    margin-top: 15px;
+}
+.btn-active:hover {
+    background-color: #f8bf35;
+    border: 2px solid #f8bf35;
+}
+hr {
+    border: 0;
+    height: 2px;
+    background: #49abfe;
+    width: 30px;
+    margin-left:0;
+}
+.forgot {
+    padding-top: 25px;
+    width: 20%;
+
+    float: right;
+} 
+.form-group {
+    display: flex;
+    flex-direction: column-reverse;
+}
+form input:focus + label {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  form input:focus + label>i {
+    color: #49abfe;
+}
+.required {
+    color: red;
+    font-size: 14px;
+}
+input {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding: 5px;
+    width: 100%;
+}
+
+i {
+    float: right;
+}
+ 
+
+.hello {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.user-info {
+    position: absolute;
+    background-color:  rgba(10.6, 13.7, 27.8, 0.9);
+    width: 900px;
+    height: 450px;
+    top: 60px;
+    left: 190px;
+}
+.manage-attr {
+    position: absolute;
+    width: 850px;
+    height: 400px;
+    top: 25px;
+    left: 30px;
+    display: grid;
+    grid-template-columns: 425px 425px;
+}
+.edit-form {
+    background-color:  white;
+    overflow: auto;
+}
+.add-attr {
+    color: white;
+    padding: 10px;
+}
+.edit-input {
+    width: 45%;
+    padding: 5px;
+}
+.attr-input {
+    width: 80%;
+    padding: 5px;
+}
+label {
+    float: left;
+    padding-left: 10px;
+}
+h3{
+    width: 100%;
+    text-align: center;
+}
+table {
+    border-spacing: 5px;
+    margin: 5px;
+  }
+  td, th {
+    text-align: left;
+  }
+  .logout {
+    position: absolute;
+    right: 10px;
+    width: 50px;
+    color: white;
+}
