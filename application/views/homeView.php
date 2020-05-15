@@ -1,9 +1,8 @@
 <?php require_once('header.php');?>
-<?php if(!empty($data6)): echo $data6; endif; ?>
+<div class="message"><?php if(!empty($data6)): echo $data6; endif; ?></div>
 <div class="content-active">
 	
 	<div id="loginForm" class="login-active">
-	<img src="https://magebit.com/img/magebit-logo-schema.png" align="right" width="70px" height="50px"/>			
 		<p class="header">Login</p>
 		<hr>
 		<div class="form">
@@ -22,13 +21,11 @@
 
 			<div class="footer">
 				<input name="login" class="btn btn-active" type="submit" value="LOGIN">
-				<span class="forgot">Forgot?</span>
 			</div>
 		</form> 
 </div>
 	</div>
 	<div id="signUpForm" class="sign-up-active">
-	<img src="https://magebit.com/img/magebit-logo-schema.png" align="right" width="70px" height="50px"/>
 		<p class="header">Sign Up</p>
 		<hr>
 		<form name="formSignUp" method="post" id="formSignUp" action="/home/signUp">

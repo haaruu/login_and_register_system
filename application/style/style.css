@@ -1,5 +1,9 @@
 body {
-    background: url("../images/background.jpg") no-repeat center center fixed; 
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    /** background picture belongs to it's author
+      * https://fullhdpictures.org/wp-content/uploads/2019/08/Forest-Images.jpg  
+      */
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,6 +18,8 @@ body {
     bottom: 5px;
     text-align: center;
     width: 100%;
+    color: rgb(245, 236, 233);
+    font-weight: bold;
 }
 .content-inactive {
     position: absolute;
@@ -21,7 +27,7 @@ body {
     left: 290px;    
     width: 700px;
     height: 320px;
-    background: rgba(10.6, 13.7, 27.8, 0.9);
+    background: rgba(16, 41, 14, 0.8);
     z-index: -1;
     color: rgb(241, 234, 234);
     font-weight: 100;
@@ -78,7 +84,7 @@ body {
     left: -10px;
     width: 15px;
     height: 338.5px;
-    background: #89deff;
+    background: #89ffac;
     transform: perspective(10em) rotateY(-55deg);
     z-index: -1;
 }
@@ -95,33 +101,27 @@ body {
 }
 .btn-inactve {
     background-color: transparent;
-    border: 2px solid #49abfe;
+    border: 2px solid #1cbe52;
 }
 .btn-inactve:hover {
-	background-color: #49abfe;
+	background-color: #4cdd78;
 }
 .btn-active {
-    background-color: #f89a35;
-    border: 2px solid #f89a35;
+    background-color: #8479e4;
+    border: 2px solid #110a5e;
     margin-top: 15px;
 }
 .btn-active:hover {
-    background-color: #f8bf35;
-    border: 2px solid #f8bf35;
+    background-color: #5e4eeb;
+    border: 2px solid #110a5e;
 }
 hr {
     border: 0;
     height: 2px;
-    background: #49abfe;
-    width: 30px;
+    background: #1cbe52;
+    width: 70px;
     margin-left:0;
 }
-.forgot {
-    padding-top: 25px;
-    width: 20%;
-
-    float: right;
-} 
 .form-group {
     display: flex;
     flex-direction: column-reverse;
@@ -131,7 +131,7 @@ form input:focus + label {
     text-transform: uppercase;
   }
   form input:focus + label>i {
-    color: #49abfe;
+    color: #1cbe52;
 }
 .required {
     color: red;
@@ -144,20 +144,22 @@ input {
     padding: 5px;
     width: 100%;
 }
-
 i {
     float: right;
 }
- 
-
+.message {
+    color: rgb(245, 236, 233);
+    font-weight: bolder;
+}
 .hello {
     position: absolute;
     text-align: center;
     width: 100%;
+    color: rgb(245, 236, 233);
 }
 .user-info {
     position: absolute;
-    background-color:  rgba(10.6, 13.7, 27.8, 0.9);
+    background-color:  rgba(16, 41, 14, 0.8);
     width: 900px;
     height: 450px;
     top: 60px;
@@ -207,5 +209,6 @@ table {
     position: absolute;
     right: 10px;
     width: 50px;
-    color: white;
+    color: rgb(13, 68, 6);
+    font-weight: bold;
 }
