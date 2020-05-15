@@ -1,4 +1,4 @@
-# login-register-system
+# Login/register system
 PHP MVC Login/register system
 
 #Installation
